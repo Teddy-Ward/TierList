@@ -4,6 +4,7 @@ $(document).ready(function(){
     let getCanvas;
      
         $("#btn-Preview-Image").on('click', function () {
+            $("#previewImage").empty();
              html2canvas(element, {
              onrendered: function (canvas) {
                     $("#previewImage").append(canvas);
